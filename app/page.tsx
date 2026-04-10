@@ -3,6 +3,7 @@ import Recomendacion from "@/components/recomendacion";
 import Distribucion from "@/components/Distribucion";
 import ContactosSection from "@/components/contactos/ContactosSection";
 import Seleccion from "@/components/Seleccion";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
                           <Distribucion/>
                         {/*Seccion Contactos*/}
                               <ContactosSection/>
+                              {/*Footer Redes */}
+                                    <Footer/>
                               
 
     </main>
