@@ -1050,7 +1050,7 @@ export const MATERIALES = [
     referencia: "3281000",
     categoria: "materiales",
     subcategoria: "accesorios",
-    imagen: "/images/accesorios/Bi-V-PinPinparamodelos.jpg",
+    imagen: "/images/accesorios/Bi-VPinPinparamodelos.jpg",
     descripcion: "Pin de modelado con geometría estrecha de la cabeza en forma de V y dos guías que sirven sobre todo para el posicionamiento estrecho en espacios limitados.",
     link: "https://www.bioden.mx/collections/renfert-accesorios-para-equipos/products/bi-v-pin",
   },
