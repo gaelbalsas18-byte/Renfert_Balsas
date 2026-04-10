@@ -5,7 +5,7 @@ export const PRODUCTOS = [
     referencia: "18420000",
     categoria: "equipos",
     subcategoria: "Vaporetas",
-    imagen: "/Images/Vaporetas/STEAMtube.jpg",
+    imagen: "/images/Vaporetas/STEAMtube.jpg",
     descripcion: "Tan sencillo como ingenioso: el box de vaporización inteligente es la solución funcional para superar eficazmente los retos.",
     link: "https://www.bioden.mx/collections/renfert-equipos/products/steam-tube",
     pdf: "/PDF/Equipos/Stem.PDF"
@@ -17,7 +17,7 @@ export const PRODUCTOS = [
     referencia: "",
     categoria: "equipos",
     subcategoria: "Vaporetas",
-    imagen: "/Images/Vaporetas/POWERsteamer.png",
+    imagen: "/images/Vaporetas/POWERsteamer.png",
     descripcion: "Tan sencillo como ingenioso: el box de vaporización inteligente es la solución funcional para superar eficazmente los retos que surgen durante la limpieza con chorro de vapor.",
     link: "https://www.bioden.mx/collections/renfert-equipos/products/power-steamer",
     pdf: "/PDF/Equipos/PowerStemer.PDF"
