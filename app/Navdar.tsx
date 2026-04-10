@@ -12,7 +12,7 @@ export default function MenuRenfert() {
     { name: "Contactos", id: "contacto" },
   ];
 
-  const handleClick = (id) => {
+  const handleClick = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
