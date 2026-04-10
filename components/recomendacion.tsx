@@ -22,7 +22,7 @@ export default function Recomendacion() {
           >
             <div className="relative w-full h-[420px]">
               <Image
-                src="/Images/Recortadoras/MTplus.jpg"
+                src="/images/Recortadoras/MTplus.jpg"
                 alt="MT_plus"
                 fill
                 className="object-contain"
@@ -70,7 +70,7 @@ export default function Recomendacion() {
 
             <div className="relative w-full h-[140px]">
               <Image
-                src="/Images/Vaporetas/STEAMtube.jpg"
+                src="/images/Vaporetas/STEAMtube.jpg"
                 alt="STEAM_tube"
                 fill
                 className="object-contain"
@@ -95,7 +95,7 @@ export default function Recomendacion() {
 
             <div className="relative w-full h-[140px]">
               <Image
-                src="/Images/Ceras/GEOClassicazul-transparente.jpg"
+                src="/images/Ceras/GEOClassicazul-transparente.jpg"
                 alt="Geo_Classic"
                 fill
                 className="object-contain"
@@ -120,7 +120,7 @@ export default function Recomendacion() {
 
             <div className="relative w-full h-[140px]">
               <Image
-                src="/Images/Ceras/GEODip.jpg"
+                src="/images/Ceras/GEODip.jpg"
                 alt="GeoDip"
                 fill
                 className="object-contain"

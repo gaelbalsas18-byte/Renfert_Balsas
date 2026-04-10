@@ -48,22 +48,15 @@ export default function Hero() {
                            </motion.div>
 
       {/* ===== CARRUSEL ===== */}
-      <div className="flex w-max animate-scroll gap-2 mt-20">
+      <div className="flex w-max animate-scroll gap-2">
         {[...images, ...images].map((src, i) => (
-          <div
+          <img
             key={i}
-            className="relative h-[480px] md:h-[300px] w-auto aspect-[4/3]"
-          >
-            <Image
-              src={src}
-              alt={`img-${i}`}
-              fill
-              sizes="(max-width: 768px) 100vw, 300px"
-              className="object-cover"
-            />
-          </div>
+            src={src}
+            className="flex h-[220px] md:h-[300px] w-auto object-contain mt-20"
+          />
         ))}
-      </div>
+        </div>
 
     </section>
   );
