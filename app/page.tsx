@@ -4,10 +4,13 @@ import Distribucion from "@/components/Distribucion";
 import ContactosSection from "@/components/contactos/ContactosSection";
 import Seleccion from "@/components/Seleccion";
 import Footer from "@/components/footer";
+import MenuRenfert from "./Navdar";
 
 export default function Home() {
   return (
     <main>
+      {/*menu */}
+         <MenuRenfert/>
       {/*Incio de la seccion*/}
               <Hero />
          {/*Seccion Recomendacion*/}

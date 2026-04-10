@@ -44,7 +44,9 @@ export default function Seleccion() {
   }, [])
 
   return (
-    <section className="w-full bg-white py-20 px-6 md:px-10">
+    <section 
+    id="seleccion"
+    className="w-full bg-white py-20 px-6 md:px-10">
       <div className="max-w-6xl mx-auto text-center">
 
         {/* TITULO */}
