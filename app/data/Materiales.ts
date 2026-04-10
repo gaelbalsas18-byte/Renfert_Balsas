@@ -511,7 +511,7 @@ export const MATERIALES = [
     referencia: "10342001",
     categoria: "materiales",
     subcategoria: "Instrumentos",
-    imagen: "/images/Instrumentos/ERGO Wax.jpg",
+    imagen: "/images/Instrumentos/ERGOWax.jpg",
     descripcion: "Los instrumentos ERGO Wax se distinguen por sus múltiples posibilidades de aplicación, al igual que por su individualidad.",
     link: "https://www.bioden.mx/collections/renfert-instrumental/products/ergo-wax",
   },

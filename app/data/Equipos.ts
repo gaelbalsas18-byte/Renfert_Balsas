@@ -101,7 +101,7 @@ export const PRODUCTOS = [
     referencia: "18600000",
     categoria: "equipos",
     subcategoria: "Perforadoras",
-    imagen: "/images/Perforadoras/AUTOspin.jpg",
+    imagen: "/images/Perforadoras/Autospin.jpg",
     descripcion: "La perforadora de pins AUTO spin permite la elaboración de modelos de trabajo de alta precisión con placas base de plástico, y completa incluso sistemas de modelos de otras marcas.",
     link: "https://www.bioden.mx/collections/renfert-equipos/products/auto-spin",
     pdf: "/PDF/Equipos/AUTO spin.PDF"
