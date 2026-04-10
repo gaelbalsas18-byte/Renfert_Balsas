@@ -62,7 +62,7 @@ const productosFiltrados = PRODUCTOS.filter((p) => {
             </p>
           </motion.div>
         </div>
-       {/* LOGO BALSAS */}
+                   {/* LOGO BALSAS */}
                       <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
