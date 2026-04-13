@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Renfert-Balsas",
   description: "Pagina de Renfert",
   icons: {
-    icon: "/icon.png", 
+    icon: "/icon.ico", 
   },
 };
 
