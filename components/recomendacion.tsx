@@ -34,7 +34,7 @@ export default function Recomendacion() {
         </div>
 
         {/* Texto */}
-        <div className="flex flex-col justify-center items-start">
+        <div className="flex flex-col justify-center items-center md:items-start  ">
           <h3 className="text-xs sm:text-sm uppercase tracking-widest text-neutral-500 mb-3">
             Producto destacado.
           </h3>
