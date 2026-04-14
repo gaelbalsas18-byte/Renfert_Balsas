@@ -17,7 +17,7 @@ export const CATEGORIAS = [
       { id: "Cinceles", label: "Cinceles" },
       { id: "Vibradores", label: "Vibradores" },
       { id: "Recortadoras de interiores", label: "Recortadoras de interiores" },
-      { id: "Espátulas", label: "Pulidoras" },
+      { id: "Espátulas", label: "Enceradoras" },
     ],
   },
 

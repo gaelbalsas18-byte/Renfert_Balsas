@@ -4,7 +4,46 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
+import { Swiper, SwiperSlide } from "swiper/react"
+
+
+import { Autoplay } from "swiper/modules"
+
 export default function Recomendacion() {
+
+  const productos = [
+    {
+      nombre: "STEAM tube",
+      img: "/images/Vaporetas/STEAMtube.jpg",
+      desc: "Tan sencillo como ingenioso: el box de vaporización inteligente.",
+    },
+    {
+      nombre: "art color Loseta de mezcla",
+      img: "/images/losetas/artcolor.jpg",
+      desc: "Loseta de cerámica glaseada para la elaboración y el almacenamiento de maquillajes.",
+    },
+    {
+      nombre: "GEO Dip",
+      img: "/images/Ceras/GEODip.jpg",
+      desc: "Cera de inmersión blanda, lista para usar, con encogimiento mínimo.",
+    },
+    {
+      nombre: "ERGO Wax",
+      img: "/images/Instrumentos/ERGOWax.jpg",
+      desc: "Los instrumentos ERGO Wax se distinguen por sus múltiples posibilidades de aplicación.",
+    },
+    {
+      nombre: "Takanishi juego",
+      img: "/images/Pinceles/Takanishijuego.jpg",
+      desc: "Pincel de pelo sintético de probada fiabilidad y excelente calidad.",
+    },
+    {
+      nombre: "Filtro de aire",
+      img: "/images/accesorios/Filtrodeaire.jpg",
+      desc: "Ya no más problemas en los sistemas de alimentación de aire comprimido.",
+    },
+  ]
+
   return (
     <section id="productos" className="relative bg-white text-black overflow-hidden">
 
@@ -34,7 +73,7 @@ export default function Recomendacion() {
         </div>
 
         {/* Texto */}
-        <div className="flex flex-col justify-center items-center md:items-start  ">
+        <div className="flex flex-col justify-center items-center md:items-start">
           <h3 className="text-xs sm:text-sm uppercase tracking-widest text-neutral-500 mb-3">
             Producto destacado.
           </h3>
@@ -56,91 +95,54 @@ export default function Recomendacion() {
         </div>
       </div>
 
-      {/* ===== TARJETAS ===== */}
+      {/* ===== CARRUSEL ===== */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-10 mt-16 md:mt-20 pb-24">
 
         <h3 className="text-2xl sm:text-3xl font-semibold mb-8 text-center text-red-600">
           Más productos Renfert.
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={20}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {productos.map((item, i) => (
+            <SwiperSlide key={i}>
+              <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow h-[320px] flex flex-col justify-between">
 
-          {/* Card 1 */}
-          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow h-[320px] flex flex-col justify-between">
+                <div className="relative w-full h-[140px]">
+                  <Image
+                    src={item.img}
+                    alt={item.nombre}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
 
-            <div className="relative w-full h-[140px]">
-              <Image
-                src="/images/Vaporetas/STEAMtube.jpg"
-                alt="STEAM_tube"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-            </div>
+                <div className="flex flex-col items-center text-center">
+                  <h4 className="text-lg font-semibold mb-2">
+                    {item.nombre}
+                  </h4>
 
-            <div className="flex flex-col items-center text-center">
-              <h4 className="text-lg font-semibold mb-2">
-                STEAM tube
-              </h4>
+                  <p className="text-sm text-neutral-600 line-clamp-2">
+                    {item.desc}
+                  </p>
+                </div>
 
-              <p className="text-sm text-neutral-600 line-clamp-2">
-                Tan sencillo como ingenioso: el box de vaporización inteligente.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow h-[320px] flex flex-col justify-between">
-
-            <div className="relative w-full h-[140px]">
-              <Image
-                src="/images/Ceras/GEOClassicazul-transparente.jpg"
-                alt="Geo_Classic"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <h4 className="text-lg font-semibold mb-2">
-                GEO Classic
-              </h4>
-
-              <p className="text-sm text-neutral-600 line-clamp-2">
-                Cera dura y orgánica con excelente modelado y mínima contracción.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow h-[320px] flex flex-col justify-between">
-
-            <div className="relative w-full h-[140px]">
-              <Image
-                src="/images/Ceras/GEODip.jpg"
-                alt="GeoDip"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <h4 className="text-lg font-semibold mb-2">
-                GEO Dip
-              </h4>
-
-              <p className="text-sm text-neutral-600 line-clamp-2">
-                Cera de inmersión lista para usar con encogimiento mínimo.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
         {/* BOTÓN */}
         <div className="w-full flex justify-center mt-14">
