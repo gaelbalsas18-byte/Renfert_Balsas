@@ -24,7 +24,7 @@ export default function Hero() {
                             <Image
                               src="/logos/BalsasTrans.png"
                               alt="Balsas"
-                              width={85}
+                              width={65}
                               height={90}
                               priority
                             />
@@ -40,7 +40,7 @@ export default function Hero() {
                             <Image
                               src="/logos/Renfert.png"
                               alt="Renfert"
-                              width={120}
+                              width={85}
                               height={100}
                               priority
                               />
