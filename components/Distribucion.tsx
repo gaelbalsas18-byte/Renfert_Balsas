@@ -317,7 +317,7 @@ export default function Distribucion() {
       </h2>
        {/* Balsas x Tokuyama - Texto */}
           <h3 className="text-xs uppercase tracking-widest text-black font-semibold mb-3 text-center">
-           Renfert x Balsas
+             Balsas x Renfert
           </h3>
       <p className="text-black mb-10 text-center max-w-x2">
         Selecciona un estado para visualizar la disponibilidad de distribuidores en el país.

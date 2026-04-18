@@ -60,7 +60,7 @@ export default function Seleccion() {
         </motion.h2>
 
         <h3 className="text-xs uppercase tracking-widest text-black font-semibold mb-3">
-          Renfert x Balsas
+          Balsas x Renfert
         </h3>
 
         {/* GRID */}

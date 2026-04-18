@@ -63,7 +63,7 @@ export default function ContactosSection() {
         </h2>
 
         <h3 className="text-xs uppercase tracking-widest text-black font-semibold mb-3">
-          Renfert x Balsas
+          Balsas x Renfert
         </h3>
 
         <p className="text-black text-lg">
