@@ -25,7 +25,7 @@ const BENEFICIOS = [
       "Procesos más limpios que mejoran la experiencia en el laboratorio.",
   },
   {
-    icono: "⏱",
+    icono: "⌚",
     titulo: "Ahorra tiempo",
     descripcion:
       "Optimiza tu flujo de trabajo y reduce tiempos operativos.",
